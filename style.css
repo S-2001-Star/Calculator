@@ -1,16 +1,13 @@
-*
-{
+*{
     border: 0;
     margin: 0;
     padding: 0;
     outline: 0;
 }
-html
-{
+html{
     scroll-behavior: smooth;
 } 
-html,body
-{
+html,body{
     width:100%;
     height:100%;
     margin:0;
@@ -21,78 +18,44 @@ html,body
 {
     width: 0;
 }
-body
-{
-    background-color: grey !important;
+body{
+    background-image: linear-gradient(to top,rgb(0, 0, 0),rgba(24, 24, 152, 0.819));
 }
-#bothbox
-{
-    padding: 9vw;
-}
-#dispbox
-{
+.container{
+    display:flex;
     align-items: center;
     justify-content: center;
-    border-radius: 1vw;
-    box-shadow: 0.5vw 1vw rgba(0, 0, 0, 0.056) !important;
+    height: 100vh;
+    width:100%;
 }
-/* ************************************ */
-.col
-{
-    float:left;
-    text-align: center;
+/***********Calculator Container**********************/
+.box{
+    padding: 2vw;
+    border-radius: 3vw !important;
+    background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.142),rgba(24, 24, 152, 0.307));
+    box-shadow: 0px -0px 10px rgba(95, 93, 228, 0.356);
+
+}
+/****************Numbers & Operators********************/
+.box form input{
+    height:14vh;
+    width:10vw;
     color:white;
-}
-#col1
-{
-    border-bottom-left-radius: 1vw;
-}
-#col4
-{
-    height:51.97vh;
-    border-bottom-right-radius: 1vw;
-}
-#col1 , #col2 , #col3 
-{
-    height:51.97vh;
-    background-color: black;
-}
-#col1 p, #col2 p, #col3 p
-{
-    margin: 0;
     font-size: larger;
-    height:12.48vh;
-    padding: 1vw;  
-    color: white;
+    background: transparent;
+    box-shadow:  0px 0px 15px rgba(95, 93, 228, 0.368);
+    border-radius: 1vw;
 }
-#col4 
+/******************Display*************************/
+form .display
 {
-    background-color: rgb(81, 79, 79);
+    display: flex;
+    justify-content: flex-end;
 }
-#col4 p
-{
-    text-align: center;
-    font-size: larger;
-    padding: 1vw;
-    height:12.48vh;
-    margin: 0;
-    color: white;
-}
-/* ************************************** */
-#coldisp
-{
-    font-size: larger;
-    height: 8vh;
-    padding: 0.5vw;
-    background-color: white;
-    border-top-left-radius: 1vw;
-}
-#reset
-{
-    font-size: larger;
-    float:left;
-    height: 8vh;
-    padding:0.5vw;
-    background-color: rgb(33, 134, 107);
-    border-top-right-radius: 1vw;
+form .display input{
+    text-align: right;
+    flex: 1;
+    border-radius: 1vw;
+    padding-right:2vw;
+    font-size:x-large;
 }
