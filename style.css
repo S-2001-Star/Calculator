@@ -1,0 +1,98 @@
+*
+{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+html
+{
+    scroll-behavior: smooth;
+} 
+html,body
+{
+    width:100%;
+    height:100%;
+    margin:0;
+    padding:0;
+    overflow-x: hidden !important;
+}
+::-webkit-scrollbar
+{
+    width: 0;
+}
+body
+{
+    background-color: grey !important;
+}
+#bothbox
+{
+    padding: 9vw;
+}
+#dispbox
+{
+    align-items: center;
+    justify-content: center;
+    border-radius: 1vw;
+    box-shadow: 0.5vw 1vw rgba(0, 0, 0, 0.056) !important;
+}
+/* ************************************ */
+.col
+{
+    float:left;
+    text-align: center;
+    color:white;
+}
+#col1
+{
+    border-bottom-left-radius: 1vw;
+}
+#col4
+{
+    height:51.97vh;
+    border-bottom-right-radius: 1vw;
+}
+#col1 , #col2 , #col3 
+{
+    height:51.97vh;
+    background-color: black;
+}
+#col1 p, #col2 p, #col3 p
+{
+    margin: 0;
+    font-size: larger;
+    height:12.48vh;
+    padding: 1vw;  
+    color: white;
+}
+#col4 
+{
+    background-color: rgb(81, 79, 79);
+}
+#col4 p
+{
+    text-align: center;
+    font-size: larger;
+    padding: 1vw;
+    height:12.48vh;
+    margin: 0;
+    color: white;
+}
+/* ************************************** */
+#coldisp
+{
+    font-size: larger;
+    height: 8vh;
+    padding: 0.5vw;
+    background-color: white;
+    border-top-left-radius: 1vw;
+}
+#reset
+{
+    font-size: larger;
+    float:left;
+    height: 8vh;
+    padding:0.5vw;
+    background-color: rgb(33, 134, 107);
+    border-top-right-radius: 1vw;
+}
